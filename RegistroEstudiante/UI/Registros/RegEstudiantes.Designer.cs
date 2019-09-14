@@ -97,14 +97,14 @@
             this.Matricula_maskedTextBox1.Location = new System.Drawing.Point(117, 41);
             this.Matricula_maskedTextBox1.Mask = "0000-0000";
             this.Matricula_maskedTextBox1.Name = "Matricula_maskedTextBox1";
-            this.Matricula_maskedTextBox1.Size = new System.Drawing.Size(125, 20);
+            this.Matricula_maskedTextBox1.Size = new System.Drawing.Size(105, 20);
             this.Matricula_maskedTextBox1.TabIndex = 52;
             // 
             // Eliminar_button4
             // 
             this.Eliminar_button4.Image = ((System.Drawing.Image)(resources.GetObject("Eliminar_button4.Image")));
             this.Eliminar_button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Eliminar_button4.Location = new System.Drawing.Point(320, 357);
+            this.Eliminar_button4.Location = new System.Drawing.Point(320, 350);
             this.Eliminar_button4.Name = "Eliminar_button4";
             this.Eliminar_button4.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Eliminar_button4.Size = new System.Drawing.Size(84, 32);
@@ -117,7 +117,7 @@
             // 
             this.Guardar_button3.Image = ((System.Drawing.Image)(resources.GetObject("Guardar_button3.Image")));
             this.Guardar_button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Guardar_button3.Location = new System.Drawing.Point(213, 357);
+            this.Guardar_button3.Location = new System.Drawing.Point(217, 350);
             this.Guardar_button3.Name = "Guardar_button3";
             this.Guardar_button3.Size = new System.Drawing.Size(78, 32);
             this.Guardar_button3.TabIndex = 50;
@@ -129,9 +129,9 @@
             // 
             this.Editar_button2.Image = ((System.Drawing.Image)(resources.GetObject("Editar_button2.Image")));
             this.Editar_button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Editar_button2.Location = new System.Drawing.Point(117, 357);
+            this.Editar_button2.Location = new System.Drawing.Point(117, 350);
             this.Editar_button2.Name = "Editar_button2";
-            this.Editar_button2.Size = new System.Drawing.Size(71, 32);
+            this.Editar_button2.Size = new System.Drawing.Size(79, 32);
             this.Editar_button2.TabIndex = 49;
             this.Editar_button2.Text = "Editar";
             this.Editar_button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -193,7 +193,7 @@
             // 
             this.ID_numericUpDown1.Location = new System.Drawing.Point(117, 15);
             this.ID_numericUpDown1.Name = "ID_numericUpDown1";
-            this.ID_numericUpDown1.Size = new System.Drawing.Size(125, 20);
+            this.ID_numericUpDown1.Size = new System.Drawing.Size(105, 20);
             this.ID_numericUpDown1.TabIndex = 42;
             // 
             // label11
@@ -303,14 +303,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(434, 399);
+            this.ClientSize = new System.Drawing.Size(428, 389);
             this.Controls.Add(this.Telefono_maskedTextBox1);
             this.Controls.Add(this.Nacimiento_dateTimePicker1);
             this.Controls.Add(this.Celular_maskedTextBox1);
             this.Controls.Add(this.Cedula_maskedTextBox1);
             this.Controls.Add(this.Matricula_maskedTextBox1);
             this.Controls.Add(this.Eliminar_button4);
-            this.Controls.Add(this.Guardar_button3);
             this.Controls.Add(this.Editar_button2);
             this.Controls.Add(this.Buscar_button1);
             this.Controls.Add(this.Balance_textBox8);
@@ -330,6 +329,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.Guardar_button3);
             this.Name = "RegEstudiantes";
             this.Text = "RegEstudiantes";
             ((System.ComponentModel.ISupportInitialize)(this.ID_numericUpDown1)).EndInit();

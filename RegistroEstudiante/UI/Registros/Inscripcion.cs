@@ -64,6 +64,12 @@ namespace RegistroEstudiante.UI.Consultas
             
         }
 
+        private bool ExisteEnLaBaseDeDatos()
+        {
+            InscripcionEntidades inscripcion = InscripcionBLL.Buscar((int)InscripcionnumericUpDown1.Value);
+            return (inscripcion != null);
+        }
+
         private void Guardarbutton2_Click(object sender, EventArgs e)
         {
             InscripcionEntidades inscripcion;
@@ -81,11 +87,13 @@ namespace RegistroEstudiante.UI.Consultas
             {
                 if (!ExisteEnLaBaseDeDatos())
                 {
-                    MessageBox.Show("No se pudo modificar el Estudiante que no existe", "fallo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("No se pudo modificar la inscripcion que no existe", "fallo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
 
                 }
                 paso = InscripcionBLL.Modificar(inscripcion);
+
+
             }
 
             //informar el resultado
@@ -98,11 +106,6 @@ namespace RegistroEstudiante.UI.Consultas
                 MessageBox.Show("No fue posible guardar!!", "fallo.", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
-        private bool ExisteEnLaBaseDeDatos()
-        {
-            InscripcionEntidades inscripcion = InscripcionBLL.Buscar((int)InscripcionnumericUpDown1.Value);
-            return (inscripcion != null);
-        }
 
         private void Eliminarbutton3_Click(object sender, EventArgs e)
         {
@@ -140,13 +143,13 @@ namespace RegistroEstudiante.UI.Consultas
 
             if (inscripcion != null)
             {
-                MessageBox.Show("Estudiante encontrado.");
+                MessageBox.Show("Inscripcion encontrado.");
                 LlenarCampo(inscripcion);
 
             }
             else
             {
-                MessageBox.Show("Estudiante no encontrado.");
+                MessageBox.Show("Inscripcion no encontrada.");
             }
         }
 
@@ -207,14 +210,6 @@ namespace RegistroEstudiante.UI.Consultas
 
             return paso;
         }
-
-        private void DepositotextBox3_TextChanged(object sender, EventArgs e)
-        {
-            decimal total;
-            decimal  monto = Convert.ToInt32(MontotextBox2);
-            decimal deposito = Convert.ToInt32(DepositotextBox3);
-
-            total = monto - deposito;
-        }
+        
     }
 }

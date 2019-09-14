@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inscripcion));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -118,31 +119,40 @@
             // 
             // Guardarbutton2
             // 
-            this.Guardarbutton2.Location = new System.Drawing.Point(198, 264);
+            this.Guardarbutton2.Image = ((System.Drawing.Image)(resources.GetObject("Guardarbutton2.Image")));
+            this.Guardarbutton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Guardarbutton2.Location = new System.Drawing.Point(193, 264);
             this.Guardarbutton2.Name = "Guardarbutton2";
-            this.Guardarbutton2.Size = new System.Drawing.Size(75, 35);
+            this.Guardarbutton2.Size = new System.Drawing.Size(78, 35);
             this.Guardarbutton2.TabIndex = 8;
             this.Guardarbutton2.Text = "Guardar";
+            this.Guardarbutton2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Guardarbutton2.UseVisualStyleBackColor = true;
             this.Guardarbutton2.Click += new System.EventHandler(this.Guardarbutton2_Click);
             // 
             // Eliminarbutton3
             // 
-            this.Eliminarbutton3.Location = new System.Drawing.Point(296, 264);
+            this.Eliminarbutton3.Image = ((System.Drawing.Image)(resources.GetObject("Eliminarbutton3.Image")));
+            this.Eliminarbutton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Eliminarbutton3.Location = new System.Drawing.Point(287, 264);
             this.Eliminarbutton3.Name = "Eliminarbutton3";
-            this.Eliminarbutton3.Size = new System.Drawing.Size(75, 35);
+            this.Eliminarbutton3.Size = new System.Drawing.Size(84, 35);
             this.Eliminarbutton3.TabIndex = 9;
             this.Eliminarbutton3.Text = "Eliminar";
+            this.Eliminarbutton3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Eliminarbutton3.UseVisualStyleBackColor = true;
             this.Eliminarbutton3.Click += new System.EventHandler(this.Eliminarbutton3_Click);
             // 
             // Buscarbutton4
             // 
-            this.Buscarbutton4.Location = new System.Drawing.Point(296, 19);
+            this.Buscarbutton4.Image = ((System.Drawing.Image)(resources.GetObject("Buscarbutton4.Image")));
+            this.Buscarbutton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Buscarbutton4.Location = new System.Drawing.Point(287, 19);
             this.Buscarbutton4.Name = "Buscarbutton4";
-            this.Buscarbutton4.Size = new System.Drawing.Size(75, 43);
+            this.Buscarbutton4.Size = new System.Drawing.Size(84, 43);
             this.Buscarbutton4.TabIndex = 10;
             this.Buscarbutton4.Text = "Buscar";
+            this.Buscarbutton4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Buscarbutton4.UseVisualStyleBackColor = true;
             this.Buscarbutton4.Click += new System.EventHandler(this.Buscarbutton4_Click);
             // 
@@ -166,7 +176,6 @@
             this.DepositotextBox3.Name = "DepositotextBox3";
             this.DepositotextBox3.Size = new System.Drawing.Size(264, 20);
             this.DepositotextBox3.TabIndex = 16;
-            this.DepositotextBox3.TextChanged += new System.EventHandler(this.DepositotextBox3_TextChanged);
             // 
             // BalancetextBox4
             // 
@@ -202,11 +211,14 @@
             // 
             // Editarbutton1
             // 
+            this.Editarbutton1.Image = ((System.Drawing.Image)(resources.GetObject("Editarbutton1.Image")));
+            this.Editarbutton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Editarbutton1.Location = new System.Drawing.Point(107, 264);
             this.Editarbutton1.Name = "Editarbutton1";
-            this.Editarbutton1.Size = new System.Drawing.Size(75, 35);
+            this.Editarbutton1.Size = new System.Drawing.Size(69, 35);
             this.Editarbutton1.TabIndex = 7;
             this.Editarbutton1.Text = "Editar";
+            this.Editarbutton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Editarbutton1.UseVisualStyleBackColor = true;
             this.Editarbutton1.Click += new System.EventHandler(this.Editarbutton1_Click);
             // 

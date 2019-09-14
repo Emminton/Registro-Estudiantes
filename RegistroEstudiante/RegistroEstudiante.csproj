@@ -69,10 +69,10 @@
     <Compile Include="UI\Consultas\ConsultarEstudiante.Designer.cs">
       <DependentUpon>ConsultarEstudiante.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Consultas\Inscripcion.cs">
+    <Compile Include="UI\Registros\Inscripcion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\Consultas\Inscripcion.Designer.cs">
+    <Compile Include="UI\Registros\Inscripcion.Designer.cs">
       <DependentUpon>Inscripcion.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\Registros\RegEstudiantes.cs">
@@ -92,7 +92,7 @@
     <EmbeddedResource Include="UI\Consultas\ConsultarEstudiante.resx">
       <DependentUpon>ConsultarEstudiante.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Consultas\Inscripcion.resx">
+    <EmbeddedResource Include="UI\Registros\Inscripcion.resx">
       <DependentUpon>Inscripcion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Registros\RegEstudiantes.resx">
@@ -129,7 +129,8 @@
     <Folder Include="UI\Reportes\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DAL\Scripts\Scripts.sql" />
+    <Content Include="DAL\Scripts\IncripcionD.sql" />
+    <Content Include="DAL\Scripts\Registro.Scripts.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

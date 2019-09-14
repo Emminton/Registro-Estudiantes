@@ -35,11 +35,6 @@ namespace RegistroEstudiante.UI.Registros
             MyErrorProvider1.Clear();
 
         }
-        //evento del boton para limpar todos los componentes
-        private void Editar_button2_Click(object sender, EventArgs e)
-        {
-            Limpiar();
-        }
 
         private void LlenarCampo(Estudiante estudiante)
         {
@@ -72,6 +67,18 @@ namespace RegistroEstudiante.UI.Registros
             estudiante.sexo = Sexo_comboBox2.Text;
             estudiante.balance = Convert.ToInt32(Balance_textBox8.Text);
             return estudiante;
+        }
+
+        //evento del boton para limpar todos los componentes
+        private void Editar_button2_Click(object sender, EventArgs e)
+        {
+            Limpiar();
+        }
+
+        private bool ExisteEnLaBaseDeDatos()
+        {
+            Estudiante estudiante = EstudianteBLL.Buscar((int)ID_numericUpDown1.Value);
+            return (estudiante != null);
         }
 
         private void Guardar_button3_Click(object sender, EventArgs e)
@@ -107,12 +114,6 @@ namespace RegistroEstudiante.UI.Registros
             else
                 MessageBox.Show("No fue posible guardar!!", "fallo.", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
-        }
-
-        private bool ExisteEnLaBaseDeDatos()
-        {
-            Estudiante estudiante = EstudianteBLL.Buscar((int)ID_numericUpDown1.Value);
-            return (estudiante != null);
         }
 
         private void Eliminar_button4_Click(object sender, EventArgs e)

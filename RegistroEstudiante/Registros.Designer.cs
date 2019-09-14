@@ -63,7 +63,7 @@
             // 
             this.estudianteToolStripMenuItem.Name = "estudianteToolStripMenuItem";
             this.estudianteToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.E)));
-            this.estudianteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.estudianteToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
             this.estudianteToolStripMenuItem.Text = "Estudiante";
             this.estudianteToolStripMenuItem.Click += new System.EventHandler(this.EstudianteToolStripMenuItem_Click);
             // 
@@ -71,7 +71,7 @@
             // 
             this.inscripcionToolStripMenuItem.Name = "inscripcionToolStripMenuItem";
             this.inscripcionToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.I)));
-            this.inscripcionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.inscripcionToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
             this.inscripcionToolStripMenuItem.Text = "Inscripcion";
             this.inscripcionToolStripMenuItem.Click += new System.EventHandler(this.InscripcionToolStripMenuItem_Click);
             // 
@@ -103,7 +103,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(748, 431);
+            this.ClientSize = new System.Drawing.Size(748, 468);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
